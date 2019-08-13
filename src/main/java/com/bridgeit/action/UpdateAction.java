@@ -10,12 +10,16 @@ import com.opensymphony.xwork2.ActionSupport;
 
 @Namespace("/")
 @ResultPath(value="/")
-@Action(value="username", results={@Result(name="success",location="index.jsp"),
+@Action(value="update", results={@Result(name="success",location="login.jsp"),
 		@Result(name="error",location="update.jsp")})
 public class UpdateAction extends ActionSupport {
 	
 	private String name;
 	private int id;
+	
+	public String exe() {
+		return NONE;
+	}
 	public String execute() {
 //		String name="dbfhdhbf";
 //		System.out.println("Action="+name);

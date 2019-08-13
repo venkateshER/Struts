@@ -8,8 +8,21 @@
 <title>Update UserName</title>
 </head>
 <body>
-<s:form action="username" validate="true" >
-	<s:textfield name="id" label="Id"/>
+<s:form action="update" validate="true" >
+<%-- <% 
+String ss =request.getParameter("id");
+System.out.println("my value" + ss);
+%> --%>
+	
+	
+	<%-- <s:property value="%{#parameters.id}" /> --%>
+	<%-- <s:textfield name="id"  label="Id"/> --%>
+	<%-- <s:property value="id"/> --%>
+	<%-- <s:set name = "id" value = "7"/> --%>
+	<%-- <s:select label = "Id" name = "id"
+            value = "%{#parameters.id}" list="%{#parameters.id}"/> --%>
+            <s:textfield label = "Id" name = "id"
+            value = "%{#parameters.id}"/>
 	<s:textfield name="name" label="Name"/>
 	<s:submit/>
 </s:form>

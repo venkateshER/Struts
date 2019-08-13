@@ -22,9 +22,9 @@
 	<tr>
 		<td><s:property value="id"/>
 		<td><s:property value="name"/>
-		<td><a href="update.jsp">Update</a></td>
+		<!-- <td><a href="update.jsp">Update</a></td> -->
 		<!-- <td><a href="deleteUser.jsp">delete</a></td> -->
-		<%-- <td><a href="update?id=<s:property value="id"/>">update</a></td> --%>
+		<td><a href="update.jsp?id=<s:property value="id"/>">update</a></td>
 		<td><a href="delete?id=<s:property value="id"/>">delete</a></td>
 	</tr>	
 </s:iterator>

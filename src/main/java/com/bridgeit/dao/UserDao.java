@@ -81,7 +81,7 @@ public class UserDao extends HibernateUtil {
 
 	  
 	  public boolean delete(int id) {
-		  
+	
 		  System.out.println("Id="+id);
 		  Session session=HibernateUtil.getSession();
 		  session.beginTransaction();

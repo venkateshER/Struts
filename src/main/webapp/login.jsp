@@ -8,7 +8,7 @@
 <title>Login</title>
 </head>
 <body>
-<s:form action="dashBoard" validate="true" >
+<s:form action="dashBoard" validte="true" >
 	<s:textfield name="email" label="Email"/>
 	<s:password name="password" label ="Password"/>
 	<s:submit/>
